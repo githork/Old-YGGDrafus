@@ -1,0 +1,4 @@
+<cmodules>
+	<module name="core" file="core.swf" version="1"></module>
+	<module name="soma" file="soma.swf" version="1"></module>
+</cmodules>

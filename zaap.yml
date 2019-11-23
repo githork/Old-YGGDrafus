@@ -1,0 +1,54 @@
+maxInstances: true
+fragments:
+  - "main"
+{% if os.platform == 'windows' %}
+  - "windows"
+{% elif os.platform == 'darwin' %}
+  - "darwin"
+{% elif os.platform == 'linux' %}
+  - "linux"
+{% endif %}
+
+settings:
+{% if os.platform == 'windows' %}
+- name: "winArch"
+  default: {{ os.arch }}
+  label:
+    en: "Architecture"
+    fr: "Architecture"
+    de: "Architektur"
+    es: "Arquitectura"
+    it: "Architettura"
+    pt: "Arquitetura"
+  type: radio
+  options:
+    - label: "32 bits"
+      value: "x86"
+    - label: "64 bits"
+      value: "x64"
+{% endif %}
+{% if os.platform == 'darwin' %}
+- name: "macArch"
+  default: {{ os.arch }}
+  label:
+    en: "Architecture"
+    fr: "Architecture"
+    de: "Architektur"
+    es: "Arquitectura"
+    it: "Architettura"
+    pt: "Arquitetura"
+  type: radio
+  options:
+    - label: "32 bits"
+      value: "x86"
+    - label: "64 bits"
+      value: "x64"
+{% endif %}
+
+{% if os.platform == 'windows' and game.settings.winArch == 'x86' %}
+executable: "resources/app.asar.unpacked/retroclient/Dofus.exe"
+{% endif %}
+
+{% if os.platform == 'darwin' and game.settings.macArch == 'x86' %}
+executable: "Dofus.app/Contents/Resources/app.asar.unpacked/retroclient/Dofus.app/Contents/MacOS/Flash Player"
+{% endif %}
