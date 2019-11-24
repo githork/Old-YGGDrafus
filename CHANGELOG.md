@@ -318,7 +318,7 @@
       - Les buffs infinis lancés sur soi restent bien affichés dans la liste des buffs (Gel Protecteur des gelées fraises par exemple)
       - Correction du ticket 0008, maintenant lorsqu'on arrive au milieu d'un combat (spec ou reconnexion), les résistances s'updatent maintenant comme il faut, il n'y a plus aucun résidu qui reste tout le long du combat
 
-- **v1.9.7** :
+- **v2.1.6* :
 	- **v2.1.6.0** :
 	  - Ajout d'une confirmation lorsqu'on détruit une quantité d'item > 1
 	  - Correction d'un bug concernant le vol de po qui n'était pas prit en compte
