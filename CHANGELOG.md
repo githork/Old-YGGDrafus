@@ -318,10 +318,14 @@
       - Les buffs infinis lancés sur soi restent bien affichés dans la liste des buffs (Gel Protecteur des gelées fraises par exemple)
       - Correction du ticket 0008, maintenant lorsqu'on arrive au milieu d'un combat (spec ou reconnexion), les résistances s'updatent maintenant comme il faut, il n'y a plus aucun résidu qui reste tout le long du combat
 
-- **v2.1.6** :
-  - Ajout d'une confirmation lorsqu'on détruit une quantité d'item > 1
-  - Correction d'un bug concernant le vol de po qui n'était pas prit en compte
-  - Correction d'un bug concernant les commandes externes (via mp) si elle n'existe pas, le client envoyait un message undefined
-  - Ajout d'icon custom sur les notifs avec le client Electron (64bit), merci a ydainna pour l'aide
-  - Correction du ticket 0002, lorsqu'on termine un combat et qu'on passe en mode créature les personnages sur des dragodindes ne passaient des fois pas en mode créature
-  - Lorsqu'on ouvrait l'interface d'ami, le paquet "FL" étaient envoyés deux fois, c'est maintenant corrigé
+- **v1.9.7** :
+	- **v2.1.6.0** :
+	  - Ajout d'une confirmation lorsqu'on détruit une quantité d'item > 1
+	  - Correction d'un bug concernant le vol de po qui n'était pas prit en compte
+	  - Correction d'un bug concernant les commandes externes (via mp) si elle n'existe pas, le client envoyait un message undefined
+	  - Ajout d'icon custom sur les notifs avec le client Electron (64bit), merci a ydainna pour l'aide
+	  - Correction du ticket 0002, lorsqu'on termine un combat et qu'on passe en mode créature les personnages sur des dragodindes ne passaient des fois pas en mode créature
+	  - Lorsqu'on ouvrait l'interface d'ami, le paquet "FL" étaient envoyés deux fois, c'est maintenant corrigé
+
+	- **v2.1.6.1** :
+		- Correction d'un bug sur les buffs PO, ils étaient compatibilisés deux fois
