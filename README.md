@@ -2,9 +2,10 @@
 Custom client based on the official client for the official serveurs Dofus Retro
 
 
-## Changelog
 
-### v1.0 (before I version the project) :
+# Changelog
+
+## v1.0 (before I version the project)
 - **v1.0.0** :
   - Retrait du timer entre 2lancers de sort
   - Correction du Livre de Quete qui s'affiche maintenant correctement
@@ -25,7 +26,7 @@ Custom client based on the official client for the official serveurs Dofus Retro
   - Correction de l'effet "Changement d'apparence" qui ne fonctionnait plus
   - Si la checkBox pour save notre ndc + mdp n'était pas coché le focus ne se faisait pas sur la textbox du ndc, c'est maintenant le cas (vos macro ne seront plus cassé)
 
-### v1.1 :
+## v1.1
 - **v1.1.0** :
   - Ajout d'une commande /mask qui rend invisible tous les sprites de personnage (>6 et <130)
 
@@ -46,12 +47,12 @@ Custom client based on the official client for the official serveurs Dofus Retro
 - **v1.1.3 Streamer** :
   - Remise de l'inversion du raccourcie Ctrl en FM (le paquet de rune se met d'un coup sans avoir besoin d'appuyer sur Ctrl)
 
-### v1.2
+## v1.2
 - **v1.2.0** :  
   - Il est maintenant possible de double cliquer sur un lot de pierre d'âme dans son inventaire pour en équiper une du lot
   - Fusion du client streamer et classique, une checkbox permetant de controler le "mode" de votre client est maintenant disponible sur l'UI Login ce qui permet de cacher son nom de compte, cacher son ip et de totalement désactiver et cacher l'option DeathAnim
 
-### v1.3
+## v1.3
 - **v1.3.0** :
   - Ajout d'une traduction française et anglaise pour les nouvelles options (merci Fhenris)
   - Correction d'un leger decalage du label de l'option force run
@@ -70,20 +71,20 @@ Custom client based on the official client for the official serveurs Dofus Retro
   - Correction du bouton Show Trigger qui ne ciblait pas tout les types de trigger (soleil) du jeu
   - Ajout du sprites du mode créature des monstres dans l'archive
 
-### v1.4
+## v1.4
 - **v1.4.0** :
   - Remodification du bouton Show Trigger
   - Remodification du message de l'option pour activer le day/night cycle pour qu'il soit plus compréhensible
   - Grosse modification de l'interface des hdv, il est maintenant possible de spam entrée pour mettre en vente a la chaîne !!!!
 
-### v1.5
+## v1.5
 - **v1.5.0** :
   - Correction du bug du chat qui remonte quand on utilise une version de flash supérieur a 10.1
   - Ajout d'une traduction pour le message vanilla "GUILD_HOUSE_ENABLE_FOR_THIS_HOUSE"
   - Ajout d'un bouton qui permet de retirer tout les objets mit en vente a l'hdv
   - Correction d'un bug qui faisaient que le tactique ne s'activait pas automatiquement en défense de perco
 
-### v1.6
+## v1.6
 - **v1.6.0** : 
   - Ajout d'une mémoire pour l'état de la timeline, sont état (rangé ou non) est donc gardé entre les combats
   - Ajout d'une option dans l'interface d'FM qui permet d'inverse le raccourci CTRL
@@ -123,7 +124,7 @@ Custom client based on the official client for the official serveurs Dofus Retro
   - Ajout d'un bouton pour retirer tout les objets dans votre mode marchand
   - Remodification du tactique par défaut, le noir est moins noir, le quadrillage sur les cases noir est retiré, le quadrillage pour le sol est plus foncé ce qui contraste moins
 
-### v1.7
+## v1.7
 - **v1.7.0** :
   - Ajout d'un bouton qui permet d'afficher les info-bulles de tous les groupes de montre (merci a C_far pour l'aide)
   - Correction du sprite du tabouret, il manquait quelques faces
@@ -174,7 +175,7 @@ Custom client based on the official client for the official serveurs Dofus Retro
   - Correction du bug : "Si on utilise le raccourcie CTRL et qu'on a plus de pods disponible pour transferer un seul et unique objet dans l'inventaire le pop-up pour prevenir qu'on est full pod ne s'affiche pas"
   - Ajout des secondes sur le panel de fin de cbt
 
-### v1.8
+## v1.8
 - **v1.8.0** :
   - Adaptation du loader au 40fps, désactivé pour le moment
   - Correction d'un bug avec le bouton "Recettes" sur l'interface de craft qui lorsqu'il était selectionné et qu'on cliquait sur "Combiner" restait sélectionné alors que l'UI de Craft se fermait
@@ -202,7 +203,7 @@ Custom client based on the official client for the official serveurs Dofus Retro
   - Remise au propre du code du mode créature en combat potentiel debug du crash lorsqu'on l'active/désactive qui pop aléatoirement
   - Correction d'un bug qui faisait que tous les sprites avaient un refresh en combat avec le mode créature d'activé lorsqu'une invocation était invoqué
 
-### v1.9
+## v1.9
 - **v1.9.2** : 
   - Encore plus de correction de bug concernant le core 40fps
 
@@ -242,14 +243,14 @@ Custom client based on the official client for the official serveurs Dofus Retro
     - Correction d'un bug qui faisait que la musique de login ne se lançait pas a la sélection des serveurs lorsqu'on changeait de personnage
     - Correction de l'affichage des esquives pa/pm des joueurs qui étaient toujours affiché a 0
 
-### v1.10
+## v1.10
 - **v1.10.0** :
   - Correction d'un problème d'update avec le mode créature en combat lorsqu'un nouveau sprite apparaissait sur la map (invocation par exemple)
   - Correction d'un bug qui lorsqu'on changeait d'apparence en combat sur une dragodinde et qu'on désactivait leur affichage depuis les options, notre personnage ne s'affichait plus morph
   - Correction d'un bug qui faisait que le raccourci "entrée" ne marchait plus sur l'interface de Login
   - Prise en charge du GPU quand vous utilisez le client avec une version supérieur a flash 9  (Cela devrais corriger les problème de nom fluidité avec Dofus Remastered, seulement si vous jouez avec flash 10 donc)
 
-### v2.0
+## v2.0
 - **v2.0.0** :
   - Correction d'un bug qui faisait que le chat restait sélectionné
   - Correction d'un message d'erreur dans le chat qui s'affichait a chaque passage en mode créature en cbt
@@ -278,7 +279,7 @@ Custom client based on the official client for the official serveurs Dofus Retro
   - Correction d'un problème d'update des personnages qui se superposaient, lorsqu'un nouveau personnage apparaissait sur la map leur ordre changeait
   - Ajout de 2 nouvelles images de login de vieilles versions
 
-### v2.1
+## v2.1
 - **v2.1.0** :
   - Le texte "News" sur l'interface de login n'est plus décalé
   - Séparation de la sauvegarde du mot de passe et du nom de compte avec une nouvelle checkbox
