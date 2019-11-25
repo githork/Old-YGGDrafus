@@ -1,7 +1,7 @@
 # YGGDrafus
 ![Version](https://img.shields.io/badge/Version-2.1.6.1-green.svg)
 
-<p align="center"><img src="logo-YGGDrafus.png"><br>Custom client based on the official client for the official serveurs Dofus Retro</p>
+<p align="center"><img src="logo-YGGDrafus.png" width="75%"><br>Custom client based on the official client for the official serveurs Dofus Retro</p>
 
 ---
 
@@ -19,9 +19,9 @@ Please see [CHANGELOG](CHANGELOG.md)
 ---
 
 ## Instalation
-- **Windows** : Go to **[releases](../../releases/tag/latest)** and download the latest release then extract it.
+- **Windows** : Go to **[releases](../../releases/latest)** and download the latest release then extract it.
 
-- **Mac** : Go to **[releases](../../releases/tag/latest)** and download the latest release after that go to **[base Mac client](https://drive.google.com/uc?id=10RfU1tkRCqvq8Ny6tQ5gFpkUWtXb4H06&export=download)** download it then extract the two archive you have. Take the content of **`YGGDrafus-VERSION\resources\app\retroclient`** and past it into **`YGGDrafus-base-mac\Dofus.app\Contents\Resources\app\retroclient`**.
+- **Mac** : Go to **[releases](../../releases/latest)** and download the latest release after that go to **[base Mac client](https://drive.google.com/uc?id=10RfU1tkRCqvq8Ny6tQ5gFpkUWtXb4H06&export=download)** download it then extract the two archive you have. Take the content of **`YGGDrafus-VERSION\resources\app\retroclient`** and past it into **`YGGDrafus-base-mac\Dofus.app\Contents\Resources\app\retroclient`**.
 
 ---
 
