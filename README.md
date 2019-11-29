@@ -23,8 +23,10 @@ Please see [CHANGELOG](CHANGELOG.md)
 
 ## Usage
 - **Windows** :
-  - **64bits** : Go to **`YGGDrafus-VERSION\`** and launch **`Dofus.exe`**.
-  - **32bits** : Go to **`YGGDrafus-VERSION\resources\app\retroclient`** and launch **`Dofus.exe`**.
+  - **64bits** : Go to **`YGGDrafus-VERSION/`** and launch **`Dofus.exe`**.
+  - **32bits** : Go to **`YGGDrafus-VERSION/resources/app/retroclient`** and launch **`Dofus.exe`**.
+
+To enable the FileCheck bypass you need to put the content of the vanilla retroclient folder (**`%appdata%/../Local/Ankama/zaap/retro/ressources/app.asar.unpacked/retroclient`**) into **`YGGDrafus-VERSION/resources/app/retroclient/vanilla`**.
 
 
  ## Author
