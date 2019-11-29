@@ -1,7 +1,7 @@
 {
   "name": "Dofus1Electron",
-  "productName": "Dofus",
-  "version": "1.30.0",
+  "productName": "Dofus Retro",
+  "version": "1.0.0",
   "description": "Modern Dofus 1 Launcher",
   "main": "main.js",
   "author": "Ankama Games",

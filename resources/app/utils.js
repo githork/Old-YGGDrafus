@@ -1,13 +1,17 @@
 'use strict'
-const {shell} = require("electron")
+const {app, shell} = require("electron")
 const path = require("path")
 const fs = require("fs")
+
+
+const util = require('util')
 const {readdirSync, statSync} = require("fs")
 const NodeRSA = require("node-rsa")
 module.exports.getDirectories = getDirectories
 module.exports.copyFile = copyFile
 module.exports.openUrlExternal = openUrlExternal
 module.exports.encryptRSA = encryptRSA
+module.exports.writeLog = writeLog
 var RSAPublicKey = null
 
 function getDirectories(path) {
@@ -44,4 +48,17 @@ function encryptRSA(message) {
 		encryptedMessage = key.encrypt(message, "base64")
 	}
 	return (encryptedMessage)
+}
+
+function writeLog(sLog, sMessage) {
+	if (sLog != null && sMessage != null) {
+		var sDirPath = path.join(app.getPath("userData"), "RetroLogs")
+		if (!fs.existsSync(sDirPath)){
+			fs.mkdirSync(sDirPath);
+		}
+		var sFilePath = path.join(sDirPath, "log_" + sLog + ".txt")
+		var wstream = fs.createWriteStream(sFilePath, {"flags": "a"})
+		wstream.write(sMessage)
+		wstream.end("\n");
+	}
 }

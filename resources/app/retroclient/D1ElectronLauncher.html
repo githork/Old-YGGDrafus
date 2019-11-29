@@ -2,9 +2,9 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';">
-	<title>Dofus 1</title>
+	<title>Dofus Retro</title>
 	<style>
-	.flashContainer {
+	#flashContainer {
 		width: 100%;
 		height: 100%;
 	}
@@ -15,10 +15,11 @@
 	<table width="100%" height="100%" cellpadding="0" cellspacing="0" border="0">
 		<tr valign="middle" align="center">
 			<td align="center">
-				<div class="flashContainer">
+				<div id="flashContainer">
 					<!–– All possible args : ?electron=yes&RSACrypto=yes ––>
-					<object data="loader.swf?electron=yes" width="100%" height="100%" type="application/x-shockwave-flash">
+					<object id="flashGame" data="loader.swf?electron=yes" width="100%" height="100%" type="application/x-shockwave-flash">
 						<param name="bgcolor" value="#000000"/>
+						<param name="quality" value="autohigh"/>
 					</object>
 				</div>
 			</td>

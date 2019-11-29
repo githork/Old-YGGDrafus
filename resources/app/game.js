@@ -15,20 +15,6 @@ function init() {
 	var trustManager = flashTrust.initSync(app.getName().replace(" ", ""), path.join(app.getPath("userData"), "Pepper Data/Shockwave Flash/WritableRoot"))
 	trustManager.empty()
 	trustManager.add("\ufeff" + path.join(__dirname, "retroclient"))
-	// On autorise Flash à stocker les données du jeu (SharedObjects)
-	try {
-		// Dès le 2ème lancement, Flash sera autorisé à accéder à stocker les données du jeu pour le domaine localhost
-		// Quasi-indispensable sous Windows (à moins de recharger le jeu via le menu uniquement après avoir accepté, ce qui est contre-intuitif)
-		// Utile sous Mac/Linux au cas où l'utilisateur missclick et refuse lors du 1er lancement
-		var sharedObjectsPath = path.join(app.getPath("userData"), "Pepper Data/Shockwave Flash/WritableRoot/#SharedObjects/")
-		var sharedObjectsFolders = api.utils.getDirectories(sharedObjectsPath)
-		for (var i in sharedObjectsFolders) {
-			var allowedLocalStorageDomainsPath = path.join(sharedObjectsPath, sharedObjectsFolders[i], "macromedia.com/support/flashplayer/sys/#local/settings.sol")
-			api.utils.copyFile(path.join(__dirname, "flashsettingslocalhost.sol"), allowedLocalStorageDomainsPath)
-		}
-	} catch (err) {
-    	// Au premier lancement le dossier contenant l'ID unique n'est pas encore visible, la copie est impossible.
-	}
 	initialized = true
 	newWindow()
 }

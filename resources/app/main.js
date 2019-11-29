@@ -18,6 +18,11 @@ app.on("second-instance", (event, commandLine, workingDirectory) => {
  api.game.newWindow()
 })
 app.on("web-contents-created", (event, contents) => {
+  contents.on("will-navigate", (event, navigationUrl) => {
+	  // Bloque la navigation : ouvre les liens tiers reçus dans le chat dans le navigateur Web du système
+	  event.preventDefault()
+	  api.utils.openUrlExternal(navigationUrl)
+  })
   contents.on("new-window", (event, navigationUrl) => {
     // Ouvre tous les liens tiers vers le navigateur Web par défaut
     event.preventDefault()
@@ -36,7 +41,6 @@ powerSaveBlocker.start("prevent-app-suspension")
 if (process.platform == "linux") {
 	app.commandLine.appendSwitch("no-sandbox")
 }
-
 // On charge le plugin pepper Flash
 flashLoader.addSource(path.join(__dirname, "pepperflash/" + process.platform).replace("app.asar", "app.asar.unpacked"))
 flashLoader.load()
